@@ -121,7 +121,7 @@
 <meta property="og:image" content="http://static.vsochina.com/data/uploads/2016/05/20/956585996573e678255dfe_1024.png">
 <meta property="og:image" content="http://static.vsochina.com/data/uploads/2016/05/20/1277332579573e678263898_1024.png">
 <meta property="og:image" content="http://static.vsochina.com/data/uploads/2016/05/20/1651813922573e67828e1c1_1024.png">
-<meta property="og:updated_time" content="2016-05-23T05:52:01.912Z">
+<meta property="og:updated_time" content="2016-05-23T06:23:43.672Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何搭建一个免费个人博客">
 <meta name="twitter:description" content="简明Github Pages与Hexo教程
@@ -340,9 +340,8 @@
 <p>1、git<br>2、Nodejs<br>3、github账号<br>4、hexo安装</p>
 </blockquote>
 <h3 id="4-步骤"><a href="#4-步骤" class="headerlink" title="4.步骤"></a>4.步骤</h3><h4 id="1）安装git（自行安装并了解git-bash的基本用法）"><a href="#1）安装git（自行安装并了解git-bash的基本用法）" class="headerlink" title="1）安装git（自行安装并了解git bash的基本用法）"></a>1）安装git（自行安装并了解git bash的基本用法）</h4><h4 id="2）安装Nodejs（自行安装并了解npm的基本用法）"><a href="#2）安装Nodejs（自行安装并了解npm的基本用法）" class="headerlink" title="2）安装Nodejs（自行安装并了解npm的基本用法）"></a>2）安装Nodejs（自行安装并了解npm的基本用法）</h4><h4 id="3）申请github账号"><a href="#3）申请github账号" class="headerlink" title="3）申请github账号"></a>3）申请github账号</h4><h4 id="4）安装hexo"><a href="#4）安装hexo" class="headerlink" title="4）安装hexo"></a>4）安装hexo</h4><pre><code>npm install  hexo -g
-</code></pre><h4 id="5）安装hexo-deployer-git自动部署工具"><a href="#5）安装hexo-deployer-git自动部署工具" class="headerlink" title="5）安装hexo-deployer-git自动部署工具"></a>5）安装hexo-deployer-git自动部署工具</h4><pre><code>npm install hexo-deployer-git --save
-</code></pre><h4 id="6）创建Repository"><a href="#6）创建Repository" class="headerlink" title="6）创建Repository"></a>6）创建Repository</h4><p>登进github网站，创建的时候注意Repository的名字：<em>username</em>.github.io。(username是你的github账号非邮箱，对命名规则有要求，必须保持一致)</p>
-<h4 id="7）创建Hexo文件夹"><a href="#7）创建Hexo文件夹" class="headerlink" title="7）创建Hexo文件夹"></a>7）创建Hexo文件夹</h4><p>安装完成后，在你喜爱的文件夹下（如C:\Hexo）创建一个文件夹<br><em>username</em>.github.io （再次强调username是你github的账号，必须保持一致），打开git bash 进入当前文件夹路径(在C:\Hexo\username.github.io)执行以下命令</p>
+</code></pre><h4 id="5）创建Repository"><a href="#5）创建Repository" class="headerlink" title="5）创建Repository"></a>5）创建Repository</h4><p>登进github网站，创建的时候注意Repository的名字：<em>username</em>.github.io。(username是你的github账号非邮箱，对命名规则有要求，必须保持一致)</p>
+<h4 id="6）创建Hexo文件夹"><a href="#6）创建Hexo文件夹" class="headerlink" title="6）创建Hexo文件夹"></a>6）创建Hexo文件夹</h4><p>安装完成后，在你喜爱的文件夹下（如C:\Hexo）创建一个文件夹<br><em>username</em>.github.io （再次强调username是你github的账号，必须保持一致），打开git bash 进入当前文件夹路径(在C:\Hexo\username.github.io)执行以下命令</p>
 <pre><code>hexo init
 </code></pre><p>完成后执行</p>
 <pre><code>npm install
@@ -350,7 +349,8 @@
 <pre><code>hexo generate
 hexo server
 </code></pre><p><img src="http://static.vsochina.com/data/uploads/2016/05/20/431348922573e69deee191_1024.png" alt="alt text"></p>
-<h4 id="8）修改配置文件"><a href="#8）修改配置文件" class="headerlink" title="8）修改配置文件"></a>8）修改配置文件</h4><p>编辑_config.yml文件（在C:\Hexo\username.github.io下）<br>修改文件里面的deploy。其中的repository就改成你刚刚复制的地址。保存这个文件。<br>url为：<a href="http://*username*.github.io" target="_blank" rel="external">http://*username*.github.io</a><br><img src="http://static.vsochina.com/data/uploads/2016/05/20/1782547878573e678145cef_1024.png" alt="此处输入图片的描述"></p>
+<h4 id="7）安装hexo-deployer-git自动部署工具"><a href="#7）安装hexo-deployer-git自动部署工具" class="headerlink" title="7）安装hexo-deployer-git自动部署工具"></a>7）安装hexo-deployer-git自动部署工具</h4><pre><code>npm install hexo-deployer-git --save
+</code></pre><h4 id="8）修改配置文件"><a href="#8）修改配置文件" class="headerlink" title="8）修改配置文件"></a>8）修改配置文件</h4><p>编辑_config.yml文件（在C:\Hexo\username.github.io下）<br>修改文件里面的deploy。其中的repository就改成你刚刚复制的地址。保存这个文件。<br>url为：<a href="http://*username*.github.io" target="_blank" rel="external">http://*username*.github.io</a><br><img src="http://static.vsochina.com/data/uploads/2016/05/20/1782547878573e678145cef_1024.png" alt="此处输入图片的描述"></p>
 <h4 id="9）设置SSH-keys"><a href="#9）设置SSH-keys" class="headerlink" title="9）设置SSH keys"></a>9）设置SSH keys</h4><p>检查是否已经存在了SSH keys,如果不存在就没有关系，如果存在的话，直接删除.ssh文件夹里面所有文件：<br><img src="http://static.vsochina.com/data/uploads/2016/05/20/1187217640573e678145526_1024.png" alt="此处输入图片的描述"><br>输入以下指令（邮箱就是你注册Github时候的邮箱）后，回车：</p>
 <pre><code>ssh-keygen -t rsa -C &quot;your_email@163.com&quot;
 </code></pre><p>然后它会提示要你输入passphrase（如上图，我没有输入直接回车，如果你输入的话，要记得，到时候会用到）。之后，如果出现类似下图：<br><img src="http://static.vsochina.com/data/uploads/2016/05/20/342875614573e67819e4f0_1024.png" alt="此处输入图片的描述"><br>然后键入以下指令：</p>
@@ -464,9 +464,9 @@ hexo server
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
-               alt="John Doe" />
-          <p class="site-author-name" itemprop="name">John Doe</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+               alt="manwuyu" />
+          <p class="site-author-name" itemprop="name">manwuyu</p>
+          <p class="site-description motion-element" itemprop="description">the blog of manwuyu</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -503,7 +503,7 @@ hexo server
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简明Github-Pages与Hexo教程"><span class="nav-number">1.</span> <span class="nav-text">简明Github Pages与Hexo教程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-为什么要搭建一个个人博客"><span class="nav-number">1.1.</span> <span class="nav-text">1.为什么要搭建一个个人博客?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-为什么选择GitHub-Pages"><span class="nav-number">1.2.</span> <span class="nav-text">2.为什么选择GitHub Pages?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-准备工作"><span class="nav-number">1.3.</span> <span class="nav-text">3.准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-步骤"><span class="nav-number">1.4.</span> <span class="nav-text">4.步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1）安装git（自行安装并了解git-bash的基本用法）"><span class="nav-number">1.4.1.</span> <span class="nav-text">1）安装git（自行安装并了解git bash的基本用法）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2）安装Nodejs（自行安装并了解npm的基本用法）"><span class="nav-number">1.4.2.</span> <span class="nav-text">2）安装Nodejs（自行安装并了解npm的基本用法）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3）申请github账号"><span class="nav-number">1.4.3.</span> <span class="nav-text">3）申请github账号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4）安装hexo"><span class="nav-number">1.4.4.</span> <span class="nav-text">4）安装hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5）安装hexo-deployer-git自动部署工具"><span class="nav-number">1.4.5.</span> <span class="nav-text">5）安装hexo-deployer-git自动部署工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6）创建Repository"><span class="nav-number">1.4.6.</span> <span class="nav-text">6）创建Repository</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7）创建Hexo文件夹"><span class="nav-number">1.4.7.</span> <span class="nav-text">7）创建Hexo文件夹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8）修改配置文件"><span class="nav-number">1.4.8.</span> <span class="nav-text">8）修改配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9）设置SSH-keys"><span class="nav-number">1.4.9.</span> <span class="nav-text">9）设置SSH keys</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10）完成部署"><span class="nav-number">1.4.10.</span> <span class="nav-text">10）完成部署</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简明Github-Pages与Hexo教程"><span class="nav-number">1.</span> <span class="nav-text">简明Github Pages与Hexo教程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-为什么要搭建一个个人博客"><span class="nav-number">1.1.</span> <span class="nav-text">1.为什么要搭建一个个人博客?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-为什么选择GitHub-Pages"><span class="nav-number">1.2.</span> <span class="nav-text">2.为什么选择GitHub Pages?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-准备工作"><span class="nav-number">1.3.</span> <span class="nav-text">3.准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-步骤"><span class="nav-number">1.4.</span> <span class="nav-text">4.步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1）安装git（自行安装并了解git-bash的基本用法）"><span class="nav-number">1.4.1.</span> <span class="nav-text">1）安装git（自行安装并了解git bash的基本用法）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2）安装Nodejs（自行安装并了解npm的基本用法）"><span class="nav-number">1.4.2.</span> <span class="nav-text">2）安装Nodejs（自行安装并了解npm的基本用法）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3）申请github账号"><span class="nav-number">1.4.3.</span> <span class="nav-text">3）申请github账号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4）安装hexo"><span class="nav-number">1.4.4.</span> <span class="nav-text">4）安装hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5）创建Repository"><span class="nav-number">1.4.5.</span> <span class="nav-text">5）创建Repository</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6）创建Hexo文件夹"><span class="nav-number">1.4.6.</span> <span class="nav-text">6）创建Hexo文件夹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7）安装hexo-deployer-git自动部署工具"><span class="nav-number">1.4.7.</span> <span class="nav-text">7）安装hexo-deployer-git自动部署工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8）修改配置文件"><span class="nav-number">1.4.8.</span> <span class="nav-text">8）修改配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9）设置SSH-keys"><span class="nav-number">1.4.9.</span> <span class="nav-text">9）设置SSH keys</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10）完成部署"><span class="nav-number">1.4.10.</span> <span class="nav-text">10）完成部署</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
@@ -526,7 +526,7 @@ hexo server
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">manwuyu</span>
 </div>
 
 <div class="powered-by">
