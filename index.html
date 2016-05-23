@@ -243,6 +243,115 @@
             
               
                 
+                <a class="post-title-link" href="/2016/05/23/article01/" itemprop="url">
+                  如何在sublime text2 里面调试nodejs
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-23T17:02:42+08:00" content="2016-05-23">
+              2016-05-23
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/23/article01/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/23/article01/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="如何在sublime-text2-里面调试nodejs"><a href="#如何在sublime-text2-里面调试nodejs" class="headerlink" title="如何在sublime text2 里面调试nodejs"></a>如何在sublime text2 里面调试nodejs</h2><hr>
+<h3 id="要先在sublime-text2中搭建一个系统环境："><a href="#要先在sublime-text2中搭建一个系统环境：" class="headerlink" title="要先在sublime text2中搭建一个系统环境："></a>要先在sublime text2中搭建一个系统环境：</h3><p>打开 Sublime Text -&gt; Tools -&gt; Build -&gt; Build System -&gt; New Build System</p>
+<h3 id="把新建的system清空输入："><a href="#把新建的system清空输入：" class="headerlink" title="把新建的system清空输入："></a>把新建的system清空输入：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="string">"cmd"</span>: [<span class="string">"node"</span>, <span class="string">"<span class="variable">$file</span>"</span>],</span><br><span class="line">	<span class="string">"file_regex"</span>: <span class="string">"^[ ]*File \"(...*?)\", line ([0-9]*)"</span>,</span><br><span class="line">	<span class="string">"selector"</span>: <span class="string">"source.javascript"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>保存并命名为 node.sublime-build</p>
+<h3 id="重启sublime-text2"><a href="#重启sublime-text2" class="headerlink" title="重启sublime text2"></a>重启sublime text2</h3><p>这时候在sublime text2中先Ctrl+N新建一个文件并保存为js格式（Sublime Text -&gt; Tools -&gt; Build System -&gt; node），如：test.js。打开我们刚刚建立的test.js的文件。Ctrl+B进行运行，即可在控制台看到相应的输出,相当于运行node test.js</p>
+<p><img src="http://static.vsochina.com/data/uploads/2016/05/23/9899152565742ceae83b10_1024.png" alt="alt text"></p>
+<p>如果有朋友遇到了如下报错</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">“[Errno 2] No such file or directory: ‘node’ </span><br><span class="line">[cmd: [<span class="string">'node’, ‘/Users/mcdong/mcdong/tmp/demo.js’]]</span><br><span class="line">[dir: /Users/mcdong/mcdong/tmp]</span><br><span class="line">[path: /usr/bin:/bin:/usr/sbin:/sbin]</span><br><span class="line">[Finished]”</span></span><br></pre></td></tr></table></figure>
+<p>说明你的node没有安装在c盘默认路径下：<br>应该把 node.sublime-build中的node改成你安装路径中的node的绝对地址</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/05/19/My-New-Post/" itemprop="url">
                   如何搭建一个免费个人博客
                 </a>
@@ -522,7 +631,7 @@ hexo server
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
