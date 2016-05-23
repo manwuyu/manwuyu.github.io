@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>manwuyu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:///manwuyu.github.io/index.html">
+<meta property="og:url" content="http://manwuyu.github.io/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -36,7 +36,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">manwuyu</a>
       </h1>
       
     </div>
@@ -56,7 +56,7 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http:///manwuyu.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://manwuyu.github.io"></form>
       </div>
     </div>
   </div>
@@ -67,7 +67,7 @@
     <article id="post-My-New-Post" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/05/19/My-New-Post/" class="article-date">
-  <time datetime="2016-05-19T07:57:07.185Z" itemprop="datePublished">2016-05-19</time>
+  <time datetime="2016-05-19T07:57:07.000Z" itemprop="datePublished">2016-05-19</time>
 </a>
     
   </div>
@@ -78,7 +78,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/19/My-New-Post/">如何搭建一个免费个人博客</a>
+      <a class="article-title" href="/2016/05/19/My-New-Post/">我的博客</a>
     </h1>
   
 
@@ -86,60 +86,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="简明Github-Pages与Hexo教程"><a href="#简明Github-Pages与Hexo教程" class="headerlink" title="简明Github Pages与Hexo教程"></a>简明Github Pages与Hexo教程</h2><h2 id="date-2016-05-19-15-57-07"><a href="#date-2016-05-19-15-57-07" class="headerlink" title="date: 2016-05-19 15:57:07"></a>date: 2016-05-19 15:57:07</h2><h3 id="1-为什么要搭建一个个人博客"><a href="#1-为什么要搭建一个个人博客" class="headerlink" title="1.为什么要搭建一个个人博客?"></a>1.为什么要搭建一个个人博客?</h3><blockquote>
-<ul>
-<li>首先要明确自己为什么要写博客？（不能回答这个问题的，就到此结束，以下教程对你而言毫无意义）</li>
-<li>写博客的地方很多，但是个人博客更加自由，可以定义成自己喜欢的样子</li>
-</ul>
-</blockquote>
-<h3 id="2-为什么选择GitHub-Pages"><a href="#2-为什么选择GitHub-Pages" class="headerlink" title="2.为什么选择GitHub Pages?"></a>2.为什么选择GitHub Pages?</h3><blockquote>
-<ul>
-<li>你不觉得用github很greek吗？瞬间跻身技术界；</li>
-<li>学着用github，享受github的便利，上面有很多大牛，眼界会开阔很多；</li>
-</ul>
-</blockquote>
-<h3 id="3-准备工作"><a href="#3-准备工作" class="headerlink" title="3.准备工作"></a>3.准备工作</h3><blockquote>
-<p>1、git<br>2、Nodejs<br>3、github账号<br>4、hexo安装</p>
-</blockquote>
-<h3 id="4-步骤"><a href="#4-步骤" class="headerlink" title="4.步骤"></a>4.步骤</h3><h4 id="1）安装git（自行安装并了解git-bash的基本用法）"><a href="#1）安装git（自行安装并了解git-bash的基本用法）" class="headerlink" title="1）安装git（自行安装并了解git bash的基本用法）"></a>1）安装git（自行安装并了解git bash的基本用法）</h4><h4 id="2）安装Nodejs（自行安装并了解npm的基本用法）"><a href="#2）安装Nodejs（自行安装并了解npm的基本用法）" class="headerlink" title="2）安装Nodejs（自行安装并了解npm的基本用法）"></a>2）安装Nodejs（自行安装并了解npm的基本用法）</h4><h4 id="3）申请github账号"><a href="#3）申请github账号" class="headerlink" title="3）申请github账号"></a>3）申请github账号</h4><h4 id="4）安装hexo"><a href="#4）安装hexo" class="headerlink" title="4）安装hexo"></a>4）安装hexo</h4><pre><code>npm install  hexo -g
-</code></pre><h4 id="5）安装hexo-deployer-git自动部署工具"><a href="#5）安装hexo-deployer-git自动部署工具" class="headerlink" title="5）安装hexo-deployer-git自动部署工具"></a>5）安装hexo-deployer-git自动部署工具</h4><pre><code>npm install hexo-deployer-git --save
-</code></pre><h4 id="6）创建Repository"><a href="#6）创建Repository" class="headerlink" title="6）创建Repository"></a>6）创建Repository</h4><p>登进github网站，创建的时候注意Repository的名字：<em>username</em>.github.io。(username是你的github账号非邮箱，对命名规则有要求，必须保持一致)</p>
-<h4 id="7）创建Hexo文件夹"><a href="#7）创建Hexo文件夹" class="headerlink" title="7）创建Hexo文件夹"></a>7）创建Hexo文件夹</h4><p>安装完成后，在你喜爱的文件夹下（如C:\Hexo）创建一个文件夹<br><em>username</em>.github.io （再次强调username是你github的账号，必须保持一致），打开git bash 进入当前文件夹路径(在C:\Hexo\username.github.io)执行以下命令</p>
-<pre><code>hexo init
-</code></pre><p>完成后执行</p>
-<pre><code>npm install
-</code></pre><p>现在我们已经搭建起本地的hexo博客了，执行以下命令(在C:\Hexo\username.github.io)，然后到浏览器输入localhost:4000看看。</p>
-<pre><code>hexo generate
-hexo server
-</code></pre><p><img src="http://static.vsochina.com/data/uploads/2016/05/20/431348922573e69deee191_1024.png" alt="alt text"></p>
-<h4 id="8）修改配置文件"><a href="#8）修改配置文件" class="headerlink" title="8）修改配置文件"></a>8）修改配置文件</h4><p>编辑_config.yml文件（在C:\Hexo\username.github.io下）<br>修改文件里面的deploy。其中的repository就改成你刚刚复制的地址。保存这个文件。<br>url为：<a href="http://*username*.github.io" target="_blank" rel="external">http://*username*.github.io</a><br><img src="http://static.vsochina.com/data/uploads/2016/05/20/1782547878573e678145cef_1024.png" alt="此处输入图片的描述"></p>
-<h4 id="9）设置SSH-keys"><a href="#9）设置SSH-keys" class="headerlink" title="9）设置SSH keys"></a>9）设置SSH keys</h4><p>检查是否已经存在了SSH keys,如果不存在就没有关系，如果存在的话，直接删除.ssh文件夹里面所有文件：<br><img src="http://static.vsochina.com/data/uploads/2016/05/20/1187217640573e678145526_1024.png" alt="此处输入图片的描述"><br>输入以下指令（邮箱就是你注册Github时候的邮箱）后，回车：</p>
-<pre><code>ssh-keygen -t rsa -C &quot;your_email@163.com&quot;
-</code></pre><p>然后它会提示要你输入passphrase（如上图，我没有输入直接回车，如果你输入的话，要记得，到时候会用到）。之后，如果出现类似下图：<br><img src="http://static.vsochina.com/data/uploads/2016/05/20/342875614573e67819e4f0_1024.png" alt="此处输入图片的描述"><br>然后键入以下指令：</p>
-<pre><code>ssh-agent -s
-</code></pre><p><img src="http://static.vsochina.com/data/uploads/2016/05/20/1793625626573e6781ec9f4_1024.png" alt="此处输入图片的描述"><br>继续输入指令：</p>
-<pre><code>ssh-add ~/.ssh/id_rsa
-</code></pre><p>输入之后，在我这里是出错了，不知道你的有没有出错。<br><img src="http://static.vsochina.com/data/uploads/2016/05/20/559286739573e67820a91f_1024.png" alt="此处输入图片的描述"><br>如果你的也是这样子出错了的话，就输入以下指令：</p>
-<pre><code>eval `ssh-agent -s`
-</code></pre><p>   <img src="http://static.vsochina.com/data/uploads/2016/05/20/1297375776573e678215462_1024.png" alt="此处输入图片的描述"> </p>
-<pre><code>ssh-add
-</code></pre><p><img src="http://static.vsochina.com/data/uploads/2016/05/20/1297375776573e678215462_1024.png" alt="此处输入图片的描述"><br>到了这一步，就可以添加SSH key到你的Github账户了。键入以下指令，拷贝Key（先拷贝了，等一下可以直接粘贴）：</p>
-<pre><code>clip &lt; ~/.ssh/id_rsa.pub
-</code></pre><p>然后到Github里面，找到SSH keys<br>点击Add SSH key：<br>输入Title，作为这个key的描述<br><img src="http://static.vsochina.com/data/uploads/2016/05/20/956585996573e678255dfe_1024.png" alt="此处输入图片的描述"><br>然后这个Key就是刚刚拷贝的，你直接粘贴就好（也可以文本打开以下文件）：<br><img src="http://static.vsochina.com/data/uploads/2016/05/20/1277332579573e678263898_1024.png" alt="此处输入图片的描述"><br>点击Add Key<br>输入你的Github密码即可完成SSH Key的添加。嗯，最后还是测试一下吧，键入以下命令：</p>
-<pre><code>ssh -T git@github.com
-</code></pre><p>你可能会看到有警告，没事，输入“yes”就好。<br><img src="http://static.vsochina.com/data/uploads/2016/05/20/1651813922573e67828e1c1_1024.png" alt="此处输入图片的描述"></p>
-<h4 id="10）完成部署"><a href="#10）完成部署" class="headerlink" title="10）完成部署"></a>10）完成部署</h4><p>最后一步，快要成功了，键入指令(在C:\Hexo\username.github.io下)：</p>
-<pre><code>hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy
-</code></pre><p>或者</p>
-<pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d
-</code></pre><p>需要输入github的账号密码</p>
-<p>11）成功</p>
-<p>用浏览器打开<a href="http://*username*.github.io" target="_blank" rel="external">http://*username*.github.io</a></p>
+        <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http:///manwuyu.github.io/2016/05/19/My-New-Post/" data-id="ciof2ws5c00007khd46jfe7ds" class="article-share-link">Share</a>
+      <a data-url="http://manwuyu.github.io/2016/05/19/My-New-Post/" data-id="ciof1fdgv0000x0hd8vmvwlfo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -184,7 +137,7 @@ hexo server
       
     </div>
     <footer class="article-footer">
-      <a data-url="http:///manwuyu.github.io/2016/05/19/hello-world/" data-id="ciof2ws5l00017khd97fx1vlm" class="article-share-link">Share</a>
+      <a data-url="http://manwuyu.github.io/2016/05/19/hello-world/" data-id="ciof1fdh90001x0hdwd7pmr6g" class="article-share-link">Share</a>
       
       
     </footer>
@@ -224,7 +177,7 @@ hexo server
       <ul>
         
           <li>
-            <a href="/2016/05/19/My-New-Post/">如何搭建一个免费个人博客</a>
+            <a href="/2016/05/19/My-New-Post/">我的博客</a>
           </li>
         
           <li>
